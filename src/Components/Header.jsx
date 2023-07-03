@@ -4,7 +4,7 @@ import { HiHome,HiMagnifyingGlass,HiStar,HiPlayCircle,HiTv } from "react-icons/h
 import {HiPlus,HiDotsVertical } from "react-icons/hi";
 import HeaderItem from './Headeritem';
 function Header() {
-    const [toggle,setToggle]=useState(true);
+    const [toggle,setToggle]=useState(false);
     const menu=[
         {
             name:'HOME',
@@ -47,7 +47,7 @@ function Header() {
         ))}
          <div className='md:hidden' onClick={()=>setToggle(!toggle)}>
             <HeaderItem name={''} Icon={HiDotsVertical} />
-         {toggle? <div className='absolute mt-3 bg-[#FFFFFF] border-[1px] border-gray-700 p-3 px-5 py-4'>
+         {toggle? <div className='absolute mt-3 bg-[#242424] border-[1px] border-gray-700 p-3 px-5 py-4'>
             {menu.map((item,index)=>index>2&&(
             <HeaderItem name={item.name} Icon={item.icon} />
             ))}
