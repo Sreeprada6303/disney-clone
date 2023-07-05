@@ -4,7 +4,7 @@ import { HiHome,HiMagnifyingGlass,HiStar,HiPlayCircle,HiTv } from "react-icons/h
 import {HiPlus,HiDotsVertical } from "react-icons/hi";
 import HeaderItem from './Headeritem';
 function Header() {
-    const [toggle,setToggle]=useState(false);
+    const [toggle,setToggle]=useState(true);
     const menu=[
         {
             name:'HOME',
